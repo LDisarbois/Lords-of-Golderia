@@ -3,22 +3,33 @@
     "maps": [
         {
             "name": "Player",
-            "id": "be430aea-7cb1-4e6d-b5b5-4b7e00de1733",
+            "id": "29d18d1f-52c4-44de-87ed-d6c61d3d9e21",
             "actions": [
                 {
                     "name": "Punch",
                     "type": "Button",
-                    "id": "72aa0513-fcfd-4ae9-a8b3-b2e74fe680c4",
+                    "id": "41694a25-85b8-44f2-8f3a-2aacc4c5dcd2",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "Press"
                 }
             ],
             "bindings": [
                 {
                     "name": "",
-                    "id": "65e0d6ba-73b7-4c23-9f49-85b986e3db8e",
+                    "id": "9afc9a43-d15b-4dcb-b152-93e3148e016f",
                     "path": "<XInputController>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "New control scheme",
+                    "action": "Punch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ced69103-66a6-454a-a008-6ca44da33d2d",
+                    "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "New control scheme",
@@ -36,6 +47,16 @@
             "devices": [
                 {
                     "devicePath": "<XInputController>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
                     "isOptional": false,
                     "isOR": false
                 }
