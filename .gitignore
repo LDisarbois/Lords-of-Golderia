@@ -4,10 +4,10 @@
 [Tt]emp/
 [Oo]bj/
 [Bb]uild
-/[Bb]uilds/
-/[Ll]ibrary/
-/Library/
-/Library/Artifacts/
+**/[Bb]uilds/
+**/[Ll]ibrary/
+**/Library/
+**/Library/Artifacts/
 sysinfo.txt
 *.stackdump
 /Assets/AssetStoreTools*
