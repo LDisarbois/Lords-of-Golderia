@@ -15,10 +15,7 @@ public class CollidePunch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (punchobj.punching)
-        {
-            Debug.Log("JE FRAPPE");
-        }
+
     }
 
     public void OnTriggerEnter(Collider other)
@@ -26,8 +23,12 @@ public class CollidePunch : MonoBehaviour
         if (other.tag == "Player" && punchobj.punching)
         {
             // en gros il faut appeler le component de vie et lui modifier sa valeur...
-            // var life = other.gameObject.GetComponent<Life>();  
-            // life.end = life.end - 10;
+            var life = other.gameObject.GetComponent<HealthPlayer>();
+            if(life)
+            {
+            life.ApplyDamage(8.0f);
+            }
+
         }
     }
 
