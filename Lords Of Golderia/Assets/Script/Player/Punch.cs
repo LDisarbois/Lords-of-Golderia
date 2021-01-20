@@ -40,8 +40,8 @@ public class Punch : MonoBehaviour
         direction.Normalize();
         while (timer <= time)
         {
-            var oe2ouf = orgPos + (Mathf.Sin(timer / time * Mathf.PI) + distance) * direction;
-            transform.position = oe2ouf.normalized;
+            var OriginPlace = orgPos + (Mathf.Sin(timer / time * Mathf.PI) + distance) * direction;
+            transform.position = OriginPlace.normalized;
             yield return null;
             timer += Time.deltaTime;
         }
